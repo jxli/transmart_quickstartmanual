@@ -1,5 +1,5 @@
-# My B
+# transMART Quick Start Manual (v1.0)
 
-Welcome in my book!
+
 
 ![](./images/SendIt_1x.png)
