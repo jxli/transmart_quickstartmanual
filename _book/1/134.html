@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="1.3.4" data-basepath=".." data-revision="1427938112182">
+    <div class="book"  data-level="1.3.4" data-basepath=".." data-revision="1427946205192">
     
 
 <div class="book-summary">
@@ -309,7 +309,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_909">
+                    <section class="normal" id="section-gitbook_1069">
                     
                         <h1 id="">高级工作流</h1>
 <p>tranSMART 提供了数据高级的分析和可视化，允许用户进行如下的数据集管理：</p>
@@ -386,7 +386,7 @@
 <p><img src="../images/advanceAnalyses103.png" alt=""></p>
 <h2 id="k-">K-均值聚类</h2>
 <p>K-均值聚类是一个可视化的最密切相关的数据点分组。它是基于您指定的分组编号进行的分组。</p>
-<p>1.运行tranSMART,点击分析标签。通过从一个案例中o拖动一个或者多个概念到空的子集定义箱中来定义您希望分析的队列。</p>
+<p>1.运行tranSMART,点击&#39;分析&#39;标签。通过从一个案例中拖动一个或者多个概念到空的子集定义箱中来定义您希望分析的队列。</p>
 <ul>
 <li>如果想比较两个子集，您也许可以拖动一个额外的概念到子集2比较箱中。</li>
 </ul>
@@ -397,6 +397,56 @@
 <p><img src="../images/K-meansClustering2.png" alt=""></p>
 <p>4.在聚类数量定义域中，输入一个数值变量，点击&#39;运行&#39;按钮。您需要的分析结果就会自动生成。</p>
 <p><img src="../images/K-meansClustering3.png" alt=""></p>
+<h2 id="">生存分析</h2>
+<p>生存分析显示了时间事件数据。</p>
+<p>1.运行tranSMART，点击&#39;分析&#39;标签。通过从一个案例中拖动一个或者多个概念到空的子集定义箱中来定义您希望分析的队列。</p>
+<p>2.点击&#39;高级工作流&#39;标签，从&#39;分析&#39;下拉目录中选择&#39;生存分析&#39;。</p>
+<p><img src="../images/SurvivalAnalysis.png" alt=""></p>
+<p>3.定义变量：</p>
+<table>
+<thead>
+<tr>
+<th>变量</th>
+<th>是否是必须的？</th>
+<th>定义</th>
+<th>例子</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>时间</td>
+<td>是</td>
+<td>在tranSMART中的一个数值域</td>
+<td><img src="../images/SurvivalAnalysis1.png" alt=""></td>
+</tr>
+<tr>
+<td>类别</td>
+<td>否</td>
+<td>从导航树中拖入一个概念到输入箱中，这个概念将会控制那些数据将会被分割以便比较它们的生存时间的分组。<br />如果变量是连续型的，那么变量就需要进行分箱。</td>
+<td><img src="../images/SurvivalAnalysis2.png" alt=""></td>
+</tr>
+<tr>
+<td>审查变量</td>
+<td>否</td>
+<td>指定哪些患者的事件的时间被测量。例如如果时间变量选取的是总体生存时间(年)，一个适当的审查变量是患者的死亡时间</td>
+<td><img src="../images/SurvivalAnalysis3.png" alt=""></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>实际定义变量如下：</li>
+</ul>
+<p><img src="../images/SurvivalAnalysis4.png" alt=""></p>
+<p>4.点击&#39;运行&#39;按钮，您的分析结果如下：</p>
+<p><img src="../images/SurvivalAnalysis5.png" alt=""></p>
+<h2 id="">瀑布图</h2>
+<p>瀑布图采用绝对值与相对值结合的方式，适用于表达数个特定数值之问的数量变化关系。</p>
+<p>1.运行tranSMART，点击&#39;分析&#39;标签。通过从一个案例中拖动一个或者多个概念到空的子集定义箱中来定义您希望分析的队列。</p>
+<p>2.点击&#39;高级工作流&#39;标签，从&#39;分析&#39;下拉目录中选择&#39;生存分析&#39;。</p>
+<p><img src="../images/Waterfall.png" alt=""></p>
+<p>3.从数据集管理器中选择一个连续变量，并将其拖入箱中。然后设置变量的低范围和高范围。最后点击&#39;运行&#39;按钮，生存瀑布图。</p>
+<p><img src="../images/Waterfall1.png" alt=""></p>
+<p><img src="../images/Waterfall2.png" alt=""></p>
 
                     
                     </section>
